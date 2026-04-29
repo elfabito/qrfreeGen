@@ -22,10 +22,10 @@ export function Footer() {
           <div className="sm:col-span-2">
             <div className="flex items-center gap-2 font-semibold text-foreground mb-3">
               <QrCode className="w-5 h-5 text-accent" />
-              <span>QR Local</span>
+              <span>QR FreeGen</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              QR Local es una herramienta de{" "}
+              QR FreeGen es una herramienta de{" "}
               <a
                 href="https://desane.com.uy"
                 target="_blank"

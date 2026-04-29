@@ -35,7 +35,7 @@ export default async function PanelLayout({
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-2 font-semibold text-foreground">
               <QrCode className="w-4 h-4 text-accent" />
-              <span className="text-sm">QR Local</span>
+              <span className="text-sm">QR FreeGen</span>
             </Link>
             <Link
               href="/panel"

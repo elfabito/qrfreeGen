@@ -14,7 +14,7 @@ export default function SignupPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 font-semibold text-foreground">
             <QrCode className="w-5 h-5 text-accent" />
-            <span>QR Local</span>
+            <span>QR FreeGen</span>
           </Link>
           <h1 className="text-2xl font-bold text-foreground mt-6">Crear cuenta</h1>
           <p className="text-sm text-muted-foreground mt-1">Empezá gratis, sin tarjeta</p>

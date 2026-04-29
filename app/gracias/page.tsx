@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { QrCode, CheckCircle2, Clock } from "lucide-react";
+import { QrCode, CheckCircle2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import PendingState from "./pending";
 
 export const metadata: Metadata = {
   title: "¡Gracias por tu compra!",
@@ -50,27 +51,7 @@ export default async function GraciasPage() {
               </Link>
             </>
           ) : (
-            <>
-              <Clock className="w-12 h-12 text-accent mx-auto animate-pulse" />
-              <div className="space-y-2">
-                <h1 className="text-2xl font-bold text-foreground">¡Gracias por tu compra!</h1>
-                <p className="text-muted-foreground text-sm">
-                  Tu pago está siendo procesado. En unos segundos tendrás acceso Pro.
-                  Podés refrescar esta página o ir al panel.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2">
-                <Link
-                  href="/panel"
-                  className="block w-full bg-accent text-accent-foreground rounded-xl py-2.5 font-medium hover:opacity-90 transition-opacity"
-                >
-                  Ir al panel
-                </Link>
-                <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-                  Volver al inicio
-                </Link>
-              </div>
-            </>
+            <PendingState />
           )}
         </div>
       </div>

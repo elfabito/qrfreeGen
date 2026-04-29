@@ -34,6 +34,8 @@ export default function CheckoutPage() {
       .then((data) => {
         if (data?.init_point) {
           window.location.href = data.init_point;
+        } else {
+          setError("No se pudo iniciar el pago. Intentá de nuevo en unos segundos.");
         }
       })
       .catch(() => {

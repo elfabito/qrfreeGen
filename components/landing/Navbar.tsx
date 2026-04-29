@@ -47,7 +47,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-semibold text-foreground">
           <QrCode className="w-5 h-5 text-accent" />
-          <span>QR Local</span>
+          <span>QR FreeGen</span>
         </Link>
 
         {/* Desktop nav */}
