@@ -12,8 +12,7 @@ export type Database = {
           email: string | null;
           is_pro: boolean;
           pro_purchased_at: string | null;
-          stripe_customer_id: string | null;
-          stripe_payment_intent_id: string | null;
+          mp_payment_id: string | null;
           created_at: string;
         };
         Insert: {
@@ -21,8 +20,7 @@ export type Database = {
           email?: string | null;
           is_pro?: boolean;
           pro_purchased_at?: string | null;
-          stripe_customer_id?: string | null;
-          stripe_payment_intent_id?: string | null;
+          mp_payment_id?: string | null;
           created_at?: string;
         };
         Update: {
@@ -30,8 +28,7 @@ export type Database = {
           email?: string | null;
           is_pro?: boolean;
           pro_purchased_at?: string | null;
-          stripe_customer_id?: string | null;
-          stripe_payment_intent_id?: string | null;
+          mp_payment_id?: string | null;
           created_at?: string;
         };
         Relationships: [];
