@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { ScrollReset } from "@/components/ui/ScrollReset";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -55,7 +56,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <ScrollReset />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

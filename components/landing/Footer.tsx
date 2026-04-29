@@ -80,7 +80,7 @@ export function Footer() {
 
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            © 2026 Desane. Hecho con cariño en Montevideo.
+            © 2026 Desane. Hecho con cariño en Maldonado.
           </p>
           <div className="flex items-center gap-4">
             <a href="/privacidad" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
