@@ -102,7 +102,7 @@ function URLForm({ content, onChange }: { content: URLContent; onChange: (c: URL
         value={content.url}
         onChange={(e) => onChange({ ...content, url: e.target.value })}
         placeholder="https://tu-sitio.com"
-        autoFocus
+
       />
     </Field>
   );
