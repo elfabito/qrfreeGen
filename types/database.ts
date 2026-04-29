@@ -3,7 +3,7 @@
 
 export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
 
-export interface Database {
+export type Database = {
   public: {
     Tables: {
       profiles: {
@@ -34,6 +34,7 @@ export interface Database {
           stripe_payment_intent_id?: string | null;
           created_at?: string;
         };
+        Relationships: [];
       };
       dynamic_qrs: {
         Row: {
@@ -69,6 +70,7 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       folders: {
         Row: {
@@ -89,6 +91,7 @@ export interface Database {
           name?: string;
           created_at?: string;
         };
+        Relationships: [];
       };
       scans: {
         Row: {
@@ -115,6 +118,7 @@ export interface Database {
           device_type?: string | null;
           browser?: string | null;
         };
+        Relationships: [];
       };
       brand_templates: {
         Row: {
@@ -138,10 +142,12 @@ export interface Database {
           config?: Json;
           created_at?: string;
         };
+        Relationships: [];
       };
     };
-    Views: Record<string, never>;
-    Functions: Record<string, never>;
-    Enums: Record<string, never>;
+    Views: { [_ in never]: never };
+    Functions: { [_ in never]: never };
+    Enums: { [_ in never]: never };
+    CompositeTypes: { [_ in never]: never };
   };
-}
+};
