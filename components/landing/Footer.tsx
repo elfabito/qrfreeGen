@@ -9,8 +9,8 @@ const PRODUCT_LINKS = [
 ];
 
 const RESOURCE_LINKS = [
-  { label: "GitHub", href: "https://github.com/desane-uy/qr-local", external: true },
-  { label: "Soporte", href: "mailto:hola@desane.com.uy", external: false },
+  { label: "GitHub", href: "https://github.com/elfabito/qrfreeGen", external: true },
+  { label: "Soporte", href: "mailto:info@desane.com.uy", external: false },
 ];
 
 export function Footer() {

@@ -71,7 +71,7 @@ export function Privacy() {
                 máquina.
               </p>
               <a
-                href="https://github.com/desane-uy/qr-local"
+                href="https://github.com/elfabito/qrfreeGen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-lg text-sm text-muted-foreground hover:text-foreground hover:border-accent/50 transition-colors mt-2"

@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse, after } from "next/server";
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 function getDeviceType(ua: string): string {
@@ -53,5 +54,5 @@ export async function GET(
     });
   });
 
-  return NextResponse.redirect(qr.destination_url, { status: 302 });
+  redirect(qr.destination_url);
 }
