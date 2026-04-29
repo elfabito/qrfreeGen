@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { ServiceWorkerRegistrar } from "@/components/ServiceWorkerRegistrar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -58,6 +59,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: "history.scrollRestoration='manual'" }} />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <ServiceWorkerRegistrar />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
