@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { track } from "@vercel/analytics";
 import {
   Link2,
   Type,
@@ -517,6 +518,7 @@ export function Generator() {
         : {}),
     } as any);
     instance.download({ name: "qr", extension });
+    track("qr_download", { format: extension, type: qrType });
   };
 
   return (
